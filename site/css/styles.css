@@ -1,3 +1,15 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  color: #fff;
+}
+
+main {
+  min-height: 100vh;
+}
+
+
 /* HERO CLAIM (Home) */
 .hero-claim{
   color:#fff;
