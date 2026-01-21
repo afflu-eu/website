@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <title>afflu — Contatti</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script defer src="/js/main.js"></script>
+  </head>
+  <body>
+    <header><strong>afflu.</strong> | IT</header>
+
+    <main>
+      <h1>Contattaci</h1>
+
+      <form
+        name="contact-it"
+        method="POST"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        action="/it/contatti/grazie/"
+      >
+        <input type="hidden" name="form-name" value="contact-it" />
+        <p hidden>
+          <label>Non compilare questo <input name="bot-field" /></label>
+        </p>
+
+        <input type="text" name="name" placeholder="Nome" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <textarea name="message" placeholder="Messaggio" required></textarea>
+
+        <button type="submit">Invia</button>
+      </form>
+    </main>
+
+    <footer>© afflu</footer>
+  </body>
+</html>
